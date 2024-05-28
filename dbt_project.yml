@@ -23,6 +23,8 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 
+config-version: 2      # Specify the config version here
+
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
@@ -35,6 +37,6 @@ models:
     example:
       +materialized: view
 
-# flags:
-#   # set default for running this project -- anywhere, anytime, by anyone
-#   fail_fast: true
+flags:
+  # set default for running this project -- anywhere, anytime, by anyone
+  fail_fast: true
