@@ -6,7 +6,7 @@ name: 'fivtran_demo'
 version: '1.0.0'
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'fivtran_demo'
+# profile: 'fivtran_demo'
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
@@ -37,6 +37,4 @@ models:
     example:
       +materialized: view
 
-flags:
-  # set default for running this project -- anywhere, anytime, by anyone
-  fail_fast: true
+
